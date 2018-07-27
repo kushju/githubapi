@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="plunker">
+
+<head>
+  <meta charset="utf-8" />
+  <title>AngularJS Plunker</title>
+  <script>
+    document.write('<base href="' + document.location + '" />');
+  </script>
+  <link rel="stylesheet" href="style.css" />
+  <script data-require="angular.js@1.3.x" src="https://code.angularjs.org/1.3.20/angular.js" data-semver="1.3.20"></script>
+  <script src="app.js"></script>
+</head>
+
+<body ng-controller="MainCtrl">
+  {{countdown}}
+  <form ng-click="search(username)">
+    <input type="text" required ng-model="username">
+    <input type= "submit" >
+  </form>
+  <div ng-include="'table.html'" ng-show="data">
+    
+  </div>
+    <div>
+    {{error}}
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+<table *ngIf="showTable">
+  <tr>
+    <th>Watchers</th>
+    <th>Size</th>
+    <th>Updated At</th>
+    <th>Default Branch</th>
+    <th>URL</th>
+  </tr>
+  <tr *ngFor="let data of repoData">
+    <td>{{data.watchers}}</td>
+    <td>{{data.size}}</td>
+    <td>{{data.updated_at}}</td>
+    <td>{{data.default_branch}}</td>
+    <td>{{data.url}}</td>
+  </tr>
+</table>
+<br><br>
+<button (click)="home()">Home</button>

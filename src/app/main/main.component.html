@@ -1,0 +1,19 @@
+<div>
+    <input type="search" placeholder="Username" [(ngModel)]="username" />
+    <button type="submit" (click)="search()">Search</button>
+</div>
+<div class="table" *ngIf="showTable">
+  <table >
+    <tr>
+      <th>Name:</th>
+      <td>{{name}}</td>
+    </tr>
+    <tr>
+      <th>No. Of Repo:</th>
+      <td>{{repo}}</td>
+    </tr>
+  </table>
+  <div class="repos">
+    <button type="submit" (click)="repos()">View Repos</button>
+  </div>
+</div>
